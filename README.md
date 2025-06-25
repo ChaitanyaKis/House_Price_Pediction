@@ -31,7 +31,7 @@ def predict():
             int(request.form['furnishingstatus'])
         ]
 
-        # Preprocess and predict
+        
         final_input = scaler.transform([data])
         prediction = model.predict(final_input)[0]
 
